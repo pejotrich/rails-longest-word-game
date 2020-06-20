@@ -1,0 +1,9 @@
+<% if @included %>
+  <% if @english_word %>
+    <p>Congratulations! <strong><%= @word %></strong> is valid. You win 🎉</p>
+  <% else %>
+    <p>Sorry, but <strong><%= @word %></strong> is not a valid english word...</p>
+  <% end %>
+<% else %>
+  <p>Sorry, <strong><%= @word %></strong> can't be built out of <%= @letters %></p>
+<% end %>
